@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#4646FF"
+    android:padding="16dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Firebase Notification Demo"
+        android:layout_gravity="center"
+        android:layout_marginTop="70sp"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:id="@+id/ettitle"
+        android:hint="Title"
+        android:padding="10dp"
+        android:background="@drawable/etbg"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/etmessage"
+        android:background="@drawable/etbg"
+        android:hint="Message"
+        android:padding="10dp"
+        android:textColor="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100sp"
+        android:text="SEND ON CHANNEL 1 "
+        android:textColor="#4646FF"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:onClick="sendOnChannel1"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="SEND ON CHANNEL 2 "
+        android:textColor="#4646FF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:onClick="sendOnChannel2"/>
+
+</LinearLayout>
